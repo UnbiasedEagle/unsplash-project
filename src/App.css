@@ -24,6 +24,6 @@ body{
   margin: 0rem 1.2rem;
 }
 
-.app__imagesCollections span:hover{
+.border{
   border-bottom: 4px solid lightgrey;
 }

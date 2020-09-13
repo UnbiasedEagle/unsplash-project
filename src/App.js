@@ -27,8 +27,8 @@ function App() {
         <div className="container">
             <div className='app__imagesContainer'>
               <div className="app__imagesCollections">
-                <span onClick={onCollection1Click}>Collection 1</span>
-                <span onClick={onCollection2Click}>Collection 2</span>
+                <span style={`${collection1&&'border'}`} onClick={onCollection1Click}>Collection 1</span>
+                <span style={`${collection2 && 'border'}`} onClick={onCollection2Click}>Collection 2</span>
               </div>
               <div className="app__images">
                   {
