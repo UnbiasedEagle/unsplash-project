@@ -20,6 +20,25 @@ function App() {
     setCollection2(true)
   }
 
+  const getBorderCollection1=()=>{
+    if(collection1){
+      return {
+        borderBottom:'4px solid lightgrey'
+      }
+    }
+    return {}
+  }
+
+    const getBorderCollection2=()=>{
+    if(collection2){
+      return {
+        borderBottom:'4px solid lightgrey'
+      }
+    }
+    return {}
+  }
+  
+
   return (
     <div className="app">
       <Navbar></Navbar>
@@ -27,8 +46,8 @@ function App() {
         <div className="container">
             <div className='app__imagesContainer'>
               <div className="app__imagesCollections">
-                <span style={`${collection1&&'border'}`} onClick={onCollection1Click}>Collection 1</span>
-                <span style={`${collection2 && 'border'}`} onClick={onCollection2Click}>Collection 2</span>
+                <span style={getBorderCollection1()} onClick={onCollection1Click}>Collection 1</span>
+                <span style={getBorderCollection2()}  onClick={onCollection2Click}>Collection 2</span>
               </div>
               <div className="app__images">
                   {
