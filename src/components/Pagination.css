@@ -8,7 +8,7 @@
     padding: 1rem 0;
     text-align: center;
 }
-.pagination li a{
+.pagination li span{
     padding: 1rem 1.5rem;
     font-size: 1.4rem;
     font-weight: bold;
